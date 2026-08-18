@@ -134,68 +134,12 @@
     <p class="sync-status" id="syncCountdown"></p>
   </div>
 
-  <section class="mod-gate">
-    <div class="mod-card" id="modLocked">
-      <h2><span class="icon">🔐</span> Mod tools</h2>
-      <p class="mod-hint">Alleen voor mods. Voer de code in om de commandolijst te zien.</p>
-      <form id="modForm" class="mod-form" autocomplete="off">
-        <input type="password" id="modCode" placeholder="Code" aria-label="Mod-code">
-        <button type="submit">Ontgrendel</button>
-      </form>
-      <p class="mod-error" id="modError" hidden>Onjuiste code. Probeer opnieuw.</p>
-    </div>
-
-    <div class="mod-card" id="modUnlocked" hidden>
-      <h2><span class="icon">🛠️</span> Mod commands</h2>
-      <table class="cmd-table">
-        <tbody>
-          <tr><td class="cmd"><code>!np maxrequests [num]</code></td><td class="desc">Set max requests per user</td><td class="role">Mod / Streamer</td></tr>
-          <tr><td class="cmd"><code>!np clearqueue</code></td><td class="desc">Clear the request queue</td><td class="role">Mod / Streamer</td></tr>
-          <tr><td class="cmd"><code>!np forceskip</code></td><td class="desc">Force skip current song</td><td class="role">Mod / Streamer</td></tr>
-          <tr><td class="cmd"><code>!so</code></td><td class="desc">Een malse shoutout naar $(touser)! Check en volg zijn/haar kanaal via https://www.twitch.tv/$(touser) <span class="cooldown">5s / 15s cooldown</span></td><td class="role">Moderator</td></tr>
-        </tbody>
-      </table>
-      <button type="button" id="modLock" class="mod-lock-btn">Vergrendelen</button>
-    </div>
-  </section>
 
 </main>
 
 <footer>
   <p>🥔 MrAardappel Alerts</p>
 </footer>
-
-<script>
-(function () {
-  var CODE = "AARDAPPEL2026"; // pas dit aan om de mod-code te wijzigen
-  var form = document.getElementById('modForm');
-  var input = document.getElementById('modCode');
-  var error = document.getElementById('modError');
-  var locked = document.getElementById('modLocked');
-  var unlocked = document.getElementById('modUnlocked');
-  var lockBtn = document.getElementById('modLock');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (input.value.trim().toUpperCase() === CODE.toUpperCase()) {
-      locked.hidden = true;
-      unlocked.hidden = false;
-      error.hidden = true;
-      input.value = '';
-    } else {
-      error.hidden = false;
-      input.value = '';
-      input.focus();
-    }
-  });
-
-  lockBtn.addEventListener('click', function () {
-    unlocked.hidden = true;
-    locked.hidden = false;
-    error.hidden = true;
-  });
-})();
-</script>
 
 <script>
 (function () {
