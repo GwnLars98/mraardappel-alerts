@@ -56,7 +56,7 @@
         <tbody id="subsMonthsBody">
           <tr><td class="amount">1 maand</td><td class="alert-name">Croissantje wat goed!</td></tr>
           <tr><td class="amount">48 maanden</td><td class="alert-name">Blood for Glory</td></tr>
-          <tr><td class="amount">60 maanden</td><td class="alert-name">Wat is dat voor zooi</td></tr>
+          <tr><td class="amount">60 maanden</td><td class="alert-name">Wat is dat voor zooi <span class="sub">- Ditzkicks & Albino & Opgekonkerd</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -235,12 +235,12 @@
         var bitsRows = [];
 
         rows.forEach(function (r) {
-          var subMonth = clean(r[1]), subName = clean(r[2]);
-          var giftCount = clean(r[3]), giftName = clean(r[4]), giftNote = clean(r[5]);
-          var bits = clean(r[6]), euro = clean(r[7]), bitsName = clean(r[8]), bitsNote = clean(r[9]);
+          var subMonth = clean(r[1]), subName = clean(r[2]), subNote = clean(r[3]);
+          var giftCount = clean(r[4]), giftName = clean(r[5]), giftNote = clean(r[6]);
+          var bits = clean(r[7]), euro = clean(r[8]), bitsName = clean(r[9]), bitsNote = clean(r[10]);
 
           if (subMonth && subName) {
-            subsRows.push(renderRow(esc(subMonth), subName, ''));
+            subsRows.push(renderRow(esc(subMonth), subName, subNote));
           }
           if (giftCount) {
             giftedRows.push(renderRow(esc(giftCount), giftName, giftNote));
