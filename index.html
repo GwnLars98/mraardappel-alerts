@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MrAardappel Alerts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <a class="brand" href="https://www.mraardappel.nl/">🥔 MRAARDAPPEL</a>
+    <h1>ALERT&nbsp;PRIJSLIJST</h1>
+    <p class="tagline">Elk bedrag heeft z'n eigen geluid. Zoek 'm op, dan weet je precies wat je krijgt. 🎉</p>
+    <div class="cta-row">
+      <a class="cta-btn cta-primary" href="https://www.twitch.tv/subs/mraardappel" target="_blank" rel="noopener">💜 Word sub</a>
+      <a class="cta-btn cta-secondary" href="https://www.twitch.tv/subs/mraardappel" target="_blank" rel="noopener">🎁 Gift een sub</a>
+      <a class="cta-btn cta-secondary" href="https://streamelements.com/mraardappel/tip" target="_blank" rel="noopener">💶 Doneer</a>
+      <a class="cta-btn cta-secondary" href="https://discord.gg/ZUJar99" target="_blank" rel="noopener">💬 Discord</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="legend">
+    <span class="legend-item"><span class="badge badge-soon">Nog niet bekend</span> geluid moet nog gekozen worden</span>
+  </section>
+
+  <section class="tables">
+
+    <div class="table-card">
+      <h2><span class="icon">🎁</span> Gifted subs</h2>
+      <table>
+        <tbody id="giftedSubsBody">
+          <tr><td class="amount">1 sub</td><td class="alert-name">Croissantje wat goed!</td></tr>
+          <tr><td class="amount">5 subs</td><td class="alert-name">Daar komt die <span class="sub">- gezellige uptempo remix</span></td></tr>
+          <tr><td class="amount">6 subs</td><td class="alert-name">Verrassing</td></tr>
+          <tr><td class="amount">7 subs</td><td class="alert-name">Verrassing</td></tr>
+          <tr><td class="amount">10 subs</td><td class="alert-name">Blood for Glory <span class="sub">- D-sturb & Aversion</span></td></tr>
+          <tr><td class="amount">13 subs</td><td class="alert-name">Verrassing</td></tr>
+          <tr><td class="amount">15 subs</td><td class="alert-name">Nightmares <span class="sub">- The Dark Horror & Noxiouz</span></td></tr>
+          <tr><td class="amount">20 subs</td><td class="alert-name">Kale Koppe <span class="sub">- Albino</span></td></tr>
+          <tr><td class="amount">25 subs</td><td class="alert-name">Maren Kessel Tunnel Rave <span class="sub">- Qriminal</span></td></tr>
+          <tr><td class="amount">50 subs</td><td class="alert-name">Wat is dat voor zooi <span class="sub">- Ditzkicks & Albino & Opgekonkerd</span></td></tr>
+          <tr><td class="amount">100 subs</td><td class="alert-name"><span class="badge badge-soon">Nog niet bekend</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-card">
+      <h2><span class="icon">📅</span> Subs <span class="card-title-sub">(maanden)</span></h2>
+      <p class="card-hint">Elke 3 maanden komt er een nieuwe beloning bij. Ze verschijnen hier zodra ze bekend zijn.</p>
+      <table>
+        <tbody id="subsMonthsBody">
+          <tr><td class="amount">1 maand</td><td class="alert-name">Croissantje wat goed!</td></tr>
+          <tr><td class="amount">48 maanden</td><td class="alert-name">Blood for Glory</td></tr>
+          <tr><td class="amount">60 maanden</td><td class="alert-name">Wat is dat voor zooi</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-card">
+      <h2><span class="icon">💎</span> Bits &amp; Donaties</h2>
+      <p class="card-hint">100 bits = € 1,00 - zelfde geluid, welke van de twee je ook gebruikt.</p>
+      <table>
+        <tbody id="bitsDonatiesBody">
+          <tr><td class="amount">100 bits<span class="sub">€ 1,00</span></td><td class="alert-name">Pornhub</td></tr>
+          <tr><td class="amount">120 bits<span class="sub">€ 1,20</span></td><td class="alert-name">Joehoe</td></tr>
+          <tr><td class="amount">130 bits<span class="sub">€ 1,30</span></td><td class="alert-name">Stop de boot</td></tr>
+          <tr><td class="amount">140 bits<span class="sub">€ 1,40</span></td><td class="alert-name">Ik wil gewoon bier <span class="sub">- Robin</span></td></tr>
+          <tr><td class="amount">150 bits<span class="sub">€ 1,50</span></td><td class="alert-name">Titanic</td></tr>
+          <tr><td class="amount">160 bits<span class="sub">€ 1,60</span></td><td class="alert-name">Freddy</td></tr>
+          <tr><td class="amount">170 bits<span class="sub">€ 1,70</span></td><td class="alert-name">Ballon meneer <span class="sub">- Robin</span></td></tr>
+          <tr><td class="amount">200 bits<span class="sub">€ 2,00</span></td><td class="alert-name">Parkside meneer</td></tr>
+          <tr><td class="amount">250 bits<span class="sub">€ 2,50</span></td><td class="alert-name">Verdwaald op Twitchcon</td></tr>
+          <tr><td class="amount">260 bits<span class="sub">€ 2,60</span></td><td class="alert-name">Baila baila</td></tr>
+          <tr><td class="amount">300 bits<span class="sub">€ 3,00</span></td><td class="alert-name">Patrick vs een Tor</td></tr>
+          <tr><td class="amount">320 bits<span class="sub">€ 3,20</span></td><td class="alert-name">Parkourmeneer</td></tr>
+          <tr><td class="amount">350 bits<span class="sub">€ 3,50</span></td><td class="alert-name">Eetwedstrijd <span class="sub">- Joep & Stefan</span></td></tr>
+          <tr><td class="amount">400 bits<span class="sub">€ 4,00</span></td><td class="alert-name">Oprotten met die camera</td></tr>
+          <tr><td class="amount">500 bits<span class="sub">€ 5,00</span></td><td class="alert-name">Ik weet nuuuuuuuuu</td></tr>
+          <tr><td class="amount">800 bits<span class="sub">€ 8,00</span></td><td class="alert-name">Is er nog gehakt?</td></tr>
+          <tr><td class="amount">1000 bits<span class="sub">€ 10,00</span></td><td class="alert-name">Brutal 5.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <div class="sync-info">
+    <p class="sync-status" id="syncStatus"></p>
+    <p class="sync-status" id="syncCountdown"></p>
+  </div>
+
+  <section class="mod-gate">
+    <div class="mod-card" id="modLocked">
+      <h2><span class="icon">🔐</span> Mod tools</h2>
+      <p class="mod-hint">Alleen voor mods. Voer de code in om de commandolijst te zien.</p>
+      <form id="modForm" class="mod-form" autocomplete="off">
+        <input type="password" id="modCode" placeholder="Code" aria-label="Mod-code">
+        <button type="submit">Ontgrendel</button>
+      </form>
+      <p class="mod-error" id="modError" hidden>Onjuiste code. Probeer opnieuw.</p>
+    </div>
+
+    <div class="mod-card" id="modUnlocked" hidden>
+      <h2><span class="icon">🛠️</span> Mod commands</h2>
+      <table class="cmd-table">
+        <tbody>
+          <tr><td class="cmd"><code>!np maxrequests [num]</code></td><td class="desc">Set max requests per user</td><td class="role">Mod / Streamer</td></tr>
+          <tr><td class="cmd"><code>!np clearqueue</code></td><td class="desc">Clear the request queue</td><td class="role">Mod / Streamer</td></tr>
+          <tr><td class="cmd"><code>!np forceskip</code></td><td class="desc">Force skip current song</td><td class="role">Mod / Streamer</td></tr>
+          <tr><td class="cmd"><code>!so</code></td><td class="desc">Een malse shoutout naar $(touser)! Check en volg zijn/haar kanaal via https://www.twitch.tv/$(touser) <span class="cooldown">5s / 15s cooldown</span></td><td class="role">Moderator</td></tr>
+        </tbody>
+      </table>
+      <button type="button" id="modLock" class="mod-lock-btn">Vergrendelen</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>🥔 MrAardappel Alerts</p>
+</footer>
+
+<script>
+(function () {
+  var CODE = "AARDAPPEL2026"; // pas dit aan om de mod-code te wijzigen
+  var form = document.getElementById('modForm');
+  var input = document.getElementById('modCode');
+  var error = document.getElementById('modError');
+  var locked = document.getElementById('modLocked');
+  var unlocked = document.getElementById('modUnlocked');
+  var lockBtn = document.getElementById('modLock');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (input.value.trim().toUpperCase() === CODE.toUpperCase()) {
+      locked.hidden = true;
+      unlocked.hidden = false;
+      error.hidden = true;
+      input.value = '';
+    } else {
+      error.hidden = false;
+      input.value = '';
+      input.focus();
+    }
+  });
+
+  lockBtn.addEventListener('click', function () {
+    unlocked.hidden = true;
+    locked.hidden = false;
+    error.hidden = true;
+  });
+})();
+</script>
+
+<script>
+(function () {
+  // Publieke "Publiceren op internet" CSV-link van het prijzen-sheet.
+  var SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1bu6O_YYuDudw-RYYTOzsGsOWbeJuC_KJWANCGgxkD5k/export?format=csv";
+  var REFRESH_INTERVAL_MS = 30000; // haalt het sheet elke 30 seconden opnieuw op
+
+  function parseCsv(text) {
+    var rows = [];
+    var row = [];
+    var field = '';
+    var inQuotes = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (inQuotes) {
+        if (c === '"') {
+          if (text[i + 1] === '"') { field += '"'; i++; }
+          else { inQuotes = false; }
+        } else {
+          field += c;
+        }
+      } else if (c === '"') {
+        inQuotes = true;
+      } else if (c === ',') {
+        row.push(field); field = '';
+      } else if (c === '\n') {
+        row.push(field); rows.push(row); row = []; field = '';
+      } else if (c !== '\r') {
+        field += c;
+      }
+    }
+    if (field.length || row.length) { row.push(field); rows.push(row); }
+    return rows;
+  }
+
+  function clean(v) {
+    return (v || '').trim();
+  }
+
+  function esc(str) {
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function isUnknown(v) {
+    var c = clean(v).toLowerCase();
+    return !c || c === 'xxx';
+  }
+
+  function renderRow(amountHtml, nameText, noteText) {
+    var name = clean(nameText);
+    var note = clean(noteText).replace(/^-\s*/, '');
+    var nameHtml;
+    if (isUnknown(name)) {
+      nameHtml = '<span class="badge badge-soon">Nog niet bekend</span>';
+    } else {
+      nameHtml = esc(name);
+      if (note) nameHtml += ' <span class="sub">- ' + esc(note) + '</span>';
+    }
+    return '<tr><td class="amount">' + amountHtml + '</td><td class="alert-name">' + nameHtml + '</td></tr>';
+  }
+
+  function syncFromSheet() {
+    // Cache-buster zodat een tussenliggende proxy/browser geen oude versie teruggeeft.
+    var url = SHEET_CSV_URL + '&_=' + Date.now();
+
+    fetch(url, { cache: 'no-store' })
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.text();
+      })
+      .then(function (text) {
+        var rows = parseCsv(text).slice(4);
+        var giftedRows = [];
+        var subsRows = [];
+        var bitsRows = [];
+
+        rows.forEach(function (r) {
+          var subMonth = clean(r[1]), subName = clean(r[2]);
+          var giftCount = clean(r[3]), giftName = clean(r[4]), giftNote = clean(r[5]);
+          var bits = clean(r[6]), euro = clean(r[7]), bitsName = clean(r[8]), bitsNote = clean(r[9]);
+
+          if (subMonth && subName) {
+            subsRows.push(renderRow(esc(subMonth), subName, ''));
+          }
+          if (giftCount) {
+            giftedRows.push(renderRow(esc(giftCount), giftName, giftNote));
+          }
+          if (bitsName) {
+            var amountHtml = esc(bits) + '<span class="sub">' + esc(euro) + '</span>';
+            bitsRows.push(renderRow(amountHtml, bitsName, bitsNote));
+          }
+        });
+
+        var giftedBody = document.getElementById('giftedSubsBody');
+        var subsBody = document.getElementById('subsMonthsBody');
+        var bitsBody = document.getElementById('bitsDonatiesBody');
+        if (giftedRows.length) giftedBody.innerHTML = giftedRows.join('');
+        if (subsRows.length) subsBody.innerHTML = subsRows.join('');
+        if (bitsRows.length) bitsBody.innerHTML = bitsRows.join('');
+
+        var status = document.getElementById('syncStatus');
+        if (status) {
+          status.classList.remove('sync-error');
+          status.textContent = 'Live bijgewerkt vanuit het prijzen-sheet - ' + new Date().toLocaleTimeString('nl-NL');
+        }
+      })
+      .catch(function (err) {
+        console.warn('Kon het live prijzen-sheet niet ophalen, laatst bekende versie blijft staan.', err);
+        var status = document.getElementById('syncStatus');
+        if (status) {
+          status.classList.add('sync-error');
+          status.textContent = 'Live ophalen mislukt (' + err.message + ') - statische versie getoond, probeert opnieuw over ' + Math.round(REFRESH_INTERVAL_MS / 1000) + 's';
+        }
+      });
+  }
+
+  var nextSyncAt = Date.now() + REFRESH_INTERVAL_MS;
+
+  function tickCountdown() {
+    var countdown = document.getElementById('syncCountdown');
+    if (!countdown) return;
+    var remaining = Math.max(0, Math.round((nextSyncAt - Date.now()) / 1000));
+    countdown.textContent = 'volgende update over ' + remaining + 's';
+  }
+
+  syncFromSheet();
+  tickCountdown();
+  setInterval(function () {
+    syncFromSheet();
+    nextSyncAt = Date.now() + REFRESH_INTERVAL_MS;
+  }, REFRESH_INTERVAL_MS);
+  setInterval(tickCountdown, 1000);
+})();
+</script>
+
+</body>
+</html>
